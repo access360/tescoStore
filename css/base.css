@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Tesco';
+    src: url('fonts/TESCO.eot');
+    src: url('fonts/TESCO.eot?#iefix') format('embedded-opentype'),
+         url('fonts/TESCO.woff') format('woff'),
+         url('fonts/TESCO.ttf') format('truetype'),
+         url('fonts/TESCO.svg#MyriadProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+@font-face {
+    font-family: 'TescoB';
+    src: url('fonts/TESCOB.eot');
+    src: url('fonts/TESCOB.eot?#iefix') format('embedded-opentype'),
+         url('fonts/TESCOB.woff') format('woff'),
+         url('fonts/TESCOB.ttf') format('truetype'),
+         url('fonts/TESCOB.svg#MyriadProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+@font-face {
+    font-family: 'TescoL';
+    src: url('fonts/TESCOBL.eot');
+    src: url('fonts/TESCOBL.eot?#iefix') format('embedded-opentype'),
+         url('fonts/TESCOBL.woff') format('woff'),
+         url('fonts/TESCOBL.ttf') format('truetype'),
+         url('fonts/TESCOBL.svg#MyriadProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	cursor: none;
+    overflow:hidden;
+	
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6  {
+	text-align:center;
+	color:#730055;
+	font-family:'Tesco';
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+h1 {
+	font-size:115px;
+	line-height:120px;
+	margin-bottom:30px;
+}
+h2 {
+	font-size:78px;
+	line-height:78px;
+	margin-bottom:20px;
+}
+h3 {
+	
+	font-size:70px;
+	line-height:70px;
+
+}
+h4 {
+	font-size:37px;
+	line-height:37px;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+p {
+font-family:'Tesco';
+margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	position:relative;
+	width: 1080px;
+	height: 1920px;
+	background-image:url('assets/backfoot.png')  ;
+		background-repeat:no-repeat;
+		background-position:bottom center; 
+	background-color: #fff;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+	#standHeading {
+		position:relative;
+		width:926px;
+		height:121px;
+		background: #000;
+		color:#fff;
+		margin:20px auto;
+		text-align:center;
+		vertical-align:middle;
+		padding-top:0px;
+		
+	}
+	
+	#standHeading h3 {
+		color:#fff;
+		font-size:42px;
+		line-height:42px;
+		
+			margin-bottom:5px;
+	}
+	.centerheading {
+		position:relative;
+		top:30%;
+	}
+	#wineContainer {
+		width:926px;
+		height:1168px;
+		background:#fff;
+		margin:20px auto;
+	}
+	#wineHeading {
+		width:926px;
+		height:121px;
+		background: #fff;
+		color:#000;
+		margin:20px auto;
+		text-align:center;
+	}
+	.wineTitle {
+		margin:0 50px;
+	}
+	
+	#mapHeading {
+		width:926px;
+		height:171px;
+		background: #fff;
+		color:#000;
+		margin:20px auto;
+		text-align:center;
+	}
+	.FrontPagesubheading h2 {
+		font-size:48px;
+		
+	}
+	.popupBack {
+		background-color: rgba(181, 119, 165, 0.6);
+background: rgba(181, 119, 165, 0.6);
+
+width: 1080px;
+height: 1920px;
+display: none;
+position: absolute;
+top: 0px;
+
+	}
+	.popup {
+		position:absolute;
+		top:100px;
+		left:73px;
+		background:#fff;
+		width:930px;
+		height:1226px;
+		margin:20px auto;
+		-moz-box-shadow: 2px 7px 30px #000000;
+-webkit-box-shadow: 2px 7px 30px #000000;
+box-shadow: 2px 7px 30px #000000;
+border:2px solid #4b0024;
+	}
+	.boxPadding {
+		padding:20px;
+	}
+.closePopup {
+	float:right;
+	height:61px;
+	width:60px;
+	background-image:url('assets/close.png')  ;
+	position: absolute;
+right: 20px;
+}
+.starRating {
+	clear:both;
+	margin: 0px auto 20px;
+width: 775px;
+padding-top:50px;
+}
+.star {
+	float:left;
+	height:140px;
+	width:155px; 
+	background-image:url('assets/starOff.png')  ;
+}
+.starchecked {
+	background-image:url('assets/starOn.png')  ;
+}
+
+.buttonBevel {
+	color:#fff;
+	font-family: 'Tesco';
+	text-align:center;
+	font-size:42px;
+	border:dashed 0px #000000;
+-moz-border-radius: 22px;
+-webkit-border-radius: 22px;
+border-radius: 22px;
+	padding:15px;
+	background:#730055;
+	
+	background: #9d0bb7; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI3NCUiIHN0b3AtY29sb3I9IiM5ZDBiYjciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTkwMDZiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(top, #730055 74%, #54023f 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(74%,#730055), color-stop(100%,#54023f)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #730055 74%,#54023f 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #730055 74%,#54023f 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #730055 74%,#54023f 100%); /* IE10+ */
+background: linear-gradient(to bottom, #730055 74%,#54023f 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730055', endColorstr='#54023f',GradientType=0 ); /* IE6-8 */
+	
+-moz-box-shadow:inset 12px 12px 40px #dcb9d3;
+-webkit-box-shadow:inset 12px 12px 40px #dcb9d3;
+box-shadow:inset 12px 12px 40px #dcb9d3;	
+}
+.buttonBevel a {
+	color:#fff;
+}
+.buttonContainer {
+	width:400px;
+	margin:0 auto;
+	display:block;
+	-moz-border-radius: 22px;
+-webkit-border-radius: 22px;
+border-radius: 22px;
+	-moz-box-shadow: 10px 10px 28px #ddd;
+-webkit-box-shadow: 10px 10px 28px #ddd;
+box-shadow: 10px 10px 28px #ddd;
+}
+.wineDescription {
+	font-size:33px;
+	line-height:40px;
+}
+.registerBox {
+	width:700px;
+	margin:0 auto;
+	font-size:30px;
+}
+.registerBox input {
+	border:solid 3px #5e035e;
+-moz-border-radius: 27px;
+
+-webkit-border-radius: 27px;
+border-radius: 27px;
+	width:660px;
+	height:30px;
+	padding:20px;
+	font-size:30px;
+}
+.formCheckbox {
+	height:50px;
+	width:50px;
+	border:solid 3px #5e035e;
+	margin-left:15px;
+	margin-right:15px;
+	float:left;
+}
+.isTicked {
+	background:url('assets/tick.png');
+}
+.orderedlist li {
+	padding-bottom:10px;
+}
