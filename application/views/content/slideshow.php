@@ -23,27 +23,17 @@
 
 </style>
 <div class="slideshow">
-<?php $count = 0;?>
-<?php foreach($recent_wine as $row):?>
-	<?php if($count == 0) { echo "<div>"; } ?>
-	<?php $count = $count + 1;?>
+
 	<span id="wineContainer">
 
-			<div class="wineRack">
-				<img class="wineRackImage"   src="<?=base_url() ?>images/wines/<?=$row->product_image?>"/>
-				
-				<br/>
-				
-	<img class="smallStar"  src='<?=base_url()?>css/assets/starOn.png'/>
-	<img class="smallStar"  src='<?=base_url()?>css/assets/<?php if($row->rating > 1){ echo "starOn.png"; } else { echo "starOff.png"; }?>'/>
-	<img class="smallStar"  src='<?=base_url()?>css/assets/<?php if($row->rating > 2){ echo "starOn.png"; } else { echo "starOff.png"; }?>'/>
-	<img class="smallStar"  src='<?=base_url()?>css/assets/<?php if($row->rating > 3){ echo "starOn.png"; } else { echo "starOff.png"; }?>'/>
-	<img class="smallStar"  src='<?=base_url()?>css/assets/<?php if($row->rating > 4){ echo "starOn.png"; } else { echo "starOff.png"; }?>'/>
-	<br/>
-				<?=$row->product_name?>
-			</div>
+		text 1
 
 		</span>
-	<?php if($count == 3) { echo "</div>"; $count = 0; } ?>
-	<?php endforeach;?>
+		
+		<span id="wineContainer">
+
+		text 2
+
+		</span>
+	
 </div>
