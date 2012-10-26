@@ -33,7 +33,63 @@
     font-style: normal;
  
 }
+.dragdealer {
+	position: relative;
+	height: 30px;
+	background: #fff;
+	padding: 0px;
+}
 
+.dragdealer .handle {
+	position: absolute;
+	
+}
+
+.dragdealer .red-bar {
+	width: 0px;
+	height: 30px;
+	background: #CC0000;
+	color: #FFF;
+	line-height: 30px;
+	text-align: center;
+}
+
+.dragdealer .disabled {
+	background: #898989;
+}
+
+#slideshow {
+	width: 1080px;
+	height: 1920px;
+	
+}
+
+#slideshow .handle {
+	width: 4320px;
+	height: 1920px;
+	
+}
+
+#slideshow .handle .slide {
+	float: left;
+	width: 1080px;
+	height: 1920px;
+}
+#slideshow .handle .img1 {
+	background: #ddd;
+}
+
+#slideshow .handle .img2 {
+	background: #000;
+}
+
+#slideshow .handle .img3 {
+	background: #ddd;
+}
+
+#slideshow .handle .img4 {
+	background: #000;
+}
 
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
@@ -41,8 +97,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #000;
-	cursor: none;
-    overflow:hidden;
+	
 	
 }
 
@@ -123,7 +178,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 */
 .content {
 
-	padding: 10px 0;
+	padding: 0px 0;
 }
 
 /* ~~ miscellaneous float/clear classes ~~ */

@@ -4,6 +4,18 @@ var timeout = 150000;
 var tips = $( ".validateTips" );
 
 
+var slideshow = new Dragdealer('slideshow',
+{
+	steps: 4,
+	loose: true,
+	animationCallback: function(x, y)
+	{
+		
+	}
+});
+
+
+
 
         function checkRegexp( o, regexp, n ) {
             if ( !( regexp.test( o.val() ) ) ) {

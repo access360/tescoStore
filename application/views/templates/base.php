@@ -34,6 +34,7 @@
    <script src="<?=base_url()?>js/jquery.keyboard.extension-typing.js"></script>
    <script src="<?=base_url()?>js/jquery.keyboard.extension-autocomplete.js"></script>
      <script src="<?=base_url()?>js/idle.js"></script>
+     <script src="<?=base_url()?>js/dragdealer.js"></script>
     <script src="<?=base_url()?>js/scripts.js"></script>
 </body>
 </html>
