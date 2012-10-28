@@ -65,7 +65,7 @@
 }
 
 #slideshow .handle {
-	width: 4320px;
+	width: 2160px;
 	height: 1920px;
 	
 }
@@ -76,19 +76,19 @@
 	height: 1920px;
 }
 #slideshow .handle .img1 {
-	background: #ddd;
+	background: #fff;
 }
 
 #slideshow .handle .img2 {
-	background: #000;
+	background: #fff;
 }
 
 #slideshow .handle .img3 {
-	background: #ddd;
+	background: #fff;
 }
 
 #slideshow .handle .img4 {
-	background: #000;
+	background: #fff;
 }
 
 body {

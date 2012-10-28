@@ -6,7 +6,7 @@ var tips = $( ".validateTips" );
 
 var slideshow = new Dragdealer('slideshow',
 {
-	steps: 4,
+	steps: 2,
 	loose: true,
 	animationCallback: function(x, y)
 	{

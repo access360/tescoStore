@@ -12,8 +12,11 @@
 		height: 300px;
 	}
 	.slideshow {
-		width:800px;
+		width:872px;
 		margin:0 auto;
+		position:absolute;
+		top:387px;
+		left:104px;
 	}
 	.smallStar {
 		width:30px;
@@ -24,15 +27,15 @@
 </style>
 <div class="slideshow">
 
-	<span id="wineContainer">
+	<span id="slideContainer">
 
-		text 1
+		<img src="<?=base_url()?>css/assets/slide0.png"/>
 
 		</span>
 		
-		<span id="wineContainer">
+		<span id="slideContainer">
 
-		text 2
+		<img src="<?=base_url()?>css/assets/slide1.png"/>
 
 		</span>
 	
