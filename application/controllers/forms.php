@@ -55,7 +55,7 @@ $file = $_SERVER['DOCUMENT_ROOT']."/tescostore/images/log/store_".$today.".csv";
 $fh = fopen($file, 'a') or die("can't open file");
 $dateNow = date('l jS \of F Y h:i:s A');
 
-$data = $dateNow.", ". $action."
+$data = $dateNow.", ". $action.", ".now()."
 ";
 fwrite($fh, $data);
 fclose($fh);

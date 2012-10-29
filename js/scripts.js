@@ -1,16 +1,28 @@
 var base_url = $('#baseurl').val() + "index.php/";
 var starValue;
+var totalSlides = 2;
+var doalert = 0;
 var timeout = 60000;
 var tips = $( ".validateTips" );
 
 
 var slideshow = new Dragdealer('slideshow',
 {
-	steps: 2,
+	steps: totalSlides,
 	loose: true,
 	animationCallback: function(x, y)
 	{
-		
+		 var totalval = x * (totalSlides - 1);
+
+        if (totalval == 0) {
+
+            doalert = 1;
+            logAction('Page 1 touched');
+
+        } else if (totalval == 1) {
+            doalert = 2;
+
+        } 
 	}
 });
 
@@ -85,6 +97,30 @@ $(document).ready(function() {
             });
 
         $.idleTimer(timeout);
+        
+        
+        
+         $('#slideshow').click(function() {
+           
+            valuenow = parseFloat(slideshow
+                .getClosestSteps(slideshow.value.current));
+            currentpage = (valuenow * (totalSlides - 1) + 1);
+            if(currentpage == 1) {
+                slideshow.setStep(2);
+            }
+            
+                if (currentpage == 1) {
+
+            logAction('Page 1 touched');
+
+        } 
+        
+        if (currentpage == 2) {
+      //      logAction('Page 2 Visited');
+
+        } 
+        });
+        
 	
 	
 	$(function(){
@@ -144,7 +180,7 @@ $(document).ready(function() {
 	 window.location = base_url;
 	});
 	$('#reset').click(function(){
-			
+		  logAction('Reset Button Pressed');	
 	 window.location = base_url;
 	});
 	
