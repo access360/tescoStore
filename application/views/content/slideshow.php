@@ -29,6 +29,11 @@
 
 	<span id="slideContainer">
 
+		&nbsp;
+
+		</span>
+	<span id="slideContainer">
+
 		<img src="<?=base_url()?>css/assets/slide0.png"/>
 
 		</span>
