@@ -17,11 +17,11 @@ var slideshow = new Dragdealer('slideshow',
         if (totalval == 0) {
 
             doalert = 1;
-            logAction('Page 1 touched');
+         
 
         } else if (totalval == 1) {
             doalert = 2;
-
+   logAction('Page 2 loaded');
         } 
 	}
 });
