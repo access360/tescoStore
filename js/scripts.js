@@ -21,7 +21,7 @@ var slideshow = new Dragdealer('slideshow',
 
         } else if (totalval == 1) {
             doalert = 2;
-   logAction('Page 2 loaded');
+  
         } 
 	}
 });
@@ -116,8 +116,7 @@ $(document).ready(function() {
         } 
         
         if (currentpage == 2) {
-      //      logAction('Page 2 Visited');
-
+       logAction('Page 2 touched');
         } 
         });
         
