@@ -51,7 +51,7 @@ class Forms extends CI_Controller {
 		
 $today = date("Ymd"); 
 
-$file = $_SERVER['DOCUMENT_ROOT']."/tescowine/images/log/wine_".$today.".csv";
+$file = $_SERVER['DOCUMENT_ROOT']."/tescostore/images/log/store_".$today.".csv";
 $fh = fopen($file, 'a') or die("can't open file");
 $dateNow = date('l jS \of F Y h:i:s A');
 

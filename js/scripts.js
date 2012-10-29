@@ -1,6 +1,6 @@
 var base_url = $('#baseurl').val() + "index.php/";
 var starValue;
-var timeout = 150000;
+var timeout = 60000;
 var tips = $( ".validateTips" );
 
 
