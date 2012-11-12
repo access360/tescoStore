@@ -2,6 +2,7 @@ var base_url = $('#baseurl').val() + "index.php/";
 var starValue;
 var totalSlides = 2;
 var doalert = 0;
+var finished1 = "yes";
 var timeout = 30000;
 var tips = $( ".validateTips" );
 
@@ -87,7 +88,7 @@ function checktime() {
 function showAlert() {
     $('#finishedShopping').fadeIn('slow', function() {
         // Animation complete
-        
+        finished1 = "yes";
         setTimeout('reset()', 30000);
         });
 }
@@ -97,21 +98,25 @@ function hideAlert() {
         });
 }
 function finished() {
+	finished1 = "yes";
     hideAlert();
     $('#niceflight').fadeIn('slow', function() {
         // Animation complete
+        
         setTimeout('reset()', 6000);
     });
 }
 function notFinished() {
+	finished1 ="no";
     logAction('Clicked No on Finished Shopping popup');
     hideAlert();
 }
 function reset() {
  
 	
-   
+   if(finished1 == "yes") {
     location.reload();
+   }
     
 }
 			
