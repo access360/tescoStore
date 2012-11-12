@@ -2,7 +2,7 @@ var base_url = $('#baseurl').val() + "index.php/";
 var starValue;
 var totalSlides = 2;
 var doalert = 0;
-var timeout = 60000;
+var timeout = 30000;
 var tips = $( ".validateTips" );
 
 
@@ -73,6 +73,47 @@ var slideshow = new Dragdealer('slideshow',
 	        action : action
 	    });
 }
+
+function checktime() {
+	
+	  if(doalert >= 2){
+
+        showAlert();
+
+    }
+	
+}
+
+function showAlert() {
+    $('#finishedShopping').fadeIn('slow', function() {
+        // Animation complete
+        
+        setTimeout('reset()', 30000);
+        });
+}
+function hideAlert() {
+    $('#finishedShopping').fadeOut('slow', function() {
+        // Animation complete
+        });
+}
+function finished() {
+    hideAlert();
+    $('#niceflight').fadeIn('slow', function() {
+        // Animation complete
+        setTimeout('reset()', 6000);
+    });
+}
+function notFinished() {
+    logAction('Clicked No on Finished Shopping popup');
+    hideAlert();
+}
+function reset() {
+ 
+	
+   
+    location.reload();
+    
+}
 			
 /***********************************************/
 /*
@@ -87,9 +128,9 @@ $(document).ready(function() {
         $(document).bind("idle.idleTimer", function(){
             var timeoutCorrect = (timeout/1000);
            logAction('No Activity for ' + timeoutCorrect + ' seconds');
-           // checktime();
+           checktime();
            //alert('timeout');
-           window.location = base_url;
+          // window.location = base_url;
         });
 
         $(document).bind("active.idleTimer", function(){

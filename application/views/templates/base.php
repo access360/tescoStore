@@ -20,6 +20,24 @@
     
     <?php if(isset($mainContent)) { $this->load->view($mainContent); } ?>
     
+    
+      <div id="finishedShopping" >
+            <img  src="<?=base_url()?>css/assets/finished-shopping.png"/>
+
+
+            <div class="yesnocontainer">
+                <div onclick="finished()" class="selectDisable yesButton yesno">&nbsp;</div>
+                <div onclick="notFinished()" class="selectDisable noButton yesno">&nbsp;</div>
+                
+            </div>
+            
+           
+        </div>
+        
+        <div id="niceflight">
+ <img id="goodflight"  src="<?=base_url()?>css/assets/have-a-good-flight.png"/>
+</div>
+
     <div id="reset" style="width:1080px; height:200px;  position:absolute; bottom:0px;">
     	
     </div>
