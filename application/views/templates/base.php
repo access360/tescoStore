@@ -53,6 +53,6 @@
    <script src="<?=base_url()?>js/jquery.keyboard.extension-autocomplete.js"></script>
      <script src="<?=base_url()?>js/idle.js"></script>
      <script src="<?=base_url()?>js/dragdealer.js"></script>
-    <script src="<?=base_url()?>js/scripts.js"></script>
+    <script src="<?=base_url()?>js/scripts.js?123"></script>
 </body>
 </html>

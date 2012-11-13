@@ -2,6 +2,7 @@ var base_url = $('#baseurl').val() + "index.php/";
 var starValue;
 var totalSlides = 2;
 var doalert = 0;
+var redirection = 0;
 var finished1 = "yes";
 var timeout = 60000;
 var tips = $( ".validateTips" );
@@ -119,6 +120,28 @@ function reset() {
    }
     
 }
+	$(window).bind('beforeunload', function() {
+   redirection = redirection + 1;
+   if(redirection == 1) {
+   //	alert('You cannot leave this site');
+   	 window.setTimeout(function() {
+                window.stop();
+             
+                window.location = base_url + "welcome/redirector";
+              
+            }, 100);
+   }
+   
+    if(redirection == 2){
+            window.setTimeout(function() {
+                window.stop();
+             
+                window.location = base_url + "welcome/redirector";
+              
+            }, 100);
+           }
+   
+});
 			
 /***********************************************/
 /*
@@ -128,6 +151,7 @@ function reset() {
  **********************************************/
 
 $(document).ready(function() {
+	
 	
 	
         $(document).bind("idle.idleTimer", function(){

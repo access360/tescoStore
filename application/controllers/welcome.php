@@ -27,6 +27,11 @@ class Welcome extends CI_Controller {
 		$this -> load -> vars($data);
 		$this -> load -> view('templates/base');
 	}
+	
+	public function redirector() {
+		echo "test";
+		redirect($this->index);
+	}
 
 	public function stand_menu() {
 		//set session
