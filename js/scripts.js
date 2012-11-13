@@ -3,7 +3,7 @@ var starValue;
 var totalSlides = 2;
 var doalert = 0;
 var finished1 = "yes";
-var timeout = 30000;
+var timeout = 60000;
 var tips = $( ".validateTips" );
 
 
@@ -133,7 +133,7 @@ $(document).ready(function() {
         $(document).bind("idle.idleTimer", function(){
             var timeoutCorrect = (timeout/1000);
            logAction('No Activity for ' + timeoutCorrect + ' seconds');
-           checktime();
+           //checktime();
            //alert('timeout');
           // window.location = base_url;
         });
