@@ -12,11 +12,11 @@
 		height: 300px;
 	}
 	.slideshow {
-		width:872px;
+		width:1080px;
 		margin:0 auto;
 		position:absolute;
-		top:387px;
-		left:104px;
+		top:0px;
+		left:0px;
 	}
 	.smallStar {
 		width:30px;
@@ -29,18 +29,18 @@
 
 	<span id="slideContainer">
 
-		<img src="<?=base_url()?>css/assets/slideblank.png"/>
+		<img src="<?=base_url()?>css/assets/slidenew1.jpg"/>
 
 		</span>
 	<span id="slideContainer">
 
-		<img src="<?=base_url()?>css/assets/slide0.png"/>
+		<img src="<?=base_url()?>css/assets/slidenew2.jpg"/>
 
 		</span>
 		
 		<span id="slideContainer">
 
-		<img src="<?=base_url()?>css/assets/slide1.png"/>
+		<img src="<?=base_url()?>css/assets/slidenew1.jpg"/>
 
 		</span>
 	
