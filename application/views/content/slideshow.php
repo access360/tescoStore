@@ -29,18 +29,18 @@
 
 	<span id="slideContainer">
 
-		<img src="<?=base_url()?>css/assets/slidenew1.jpg"/>
+		<img src="<?=base_url()?>css/assets/slidenew2.jpg"/>
 
 		</span>
 	<span id="slideContainer">
 
-		<img src="<?=base_url()?>css/assets/slidenew2.jpg"/>
+		<img src="<?=base_url()?>css/assets/slidenew1.jpg"/>
 
 		</span>
 		
 		<span id="slideContainer">
 
-		<img src="<?=base_url()?>css/assets/slidenew1.jpg"/>
+		<img src="<?=base_url()?>css/assets/slidenew2.jpg"/>
 
 		</span>
 	
