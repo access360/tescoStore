@@ -4,7 +4,7 @@ var totalSlides = 2;
 var doalert = 0;
 var redirection = 0;
 var finished1 = "yes";
-var timeout = 60000;
+var timeout = 300000;
 var tips = $( ".validateTips" );
 
 
@@ -132,6 +132,7 @@ function reset() {
             }, 100);
    }
    
+   
     if(redirection == 2){
             window.setTimeout(function() {
                 window.stop();
@@ -142,7 +143,9 @@ function reset() {
            }
    
 });
-			
+		
+		
+		
 /***********************************************/
 /*
  * click wine
@@ -157,9 +160,11 @@ $(document).ready(function() {
         $(document).bind("idle.idleTimer", function(){
             var timeoutCorrect = (timeout/1000);
            logAction('No Activity for ' + timeoutCorrect + ' seconds');
-           //checktime();
-           //alert('timeout');
-          // window.location = base_url;
+          
+          
+          // checktime();
+           
+          window.location = base_url;
         });
 
         $(document).bind("active.idleTimer", function(){
